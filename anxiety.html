@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anxiety Helper</title>
+  <link rel="stylesheet" href="anxiety.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="logo"><a href="homepage.html" class="nav-link">MindHaven</a></div>
+      <nav class="nav-links">
+        <a href="burnout.html" class="nav-link">Burnout</a>
+        <a href="comfort.html" class="nav-link">Need Comfort</a>
+        <a href="anxiety.html" class="nav-link">Feeling Anxious</a>
+        <a href="anger.html" class="nav-link">Anger Management</a>
+      </nav>
+    </div>
+  </header>
+   
+  
+  <main class="site-content"> 
+  <div class="card" id="sensory-card">
+    <h2>Sensory Explorer</h2>
+    <ul id="sensory-list"></ul>
+    <button id="reset-sensory">Reset</button>
+  </div>
+
+  <div class="card" id="soundboard-card">
+    <h2>Calming Soundboard</h2>
+    <div class="sound-buttons">
+      <button onclick="playSound('rain')">🌧️ RAIN</button>
+      <button onclick="playSound('waves')">🌊 WAVES</button>
+      <button onclick="playSound('birds')">🐦 BIRDS</button>
+      <button onclick="playSound('fire')">🔥 FIRE</button>
+    </div>
+  </div>
+
+
+  <div class="card" id="game-card">
+    <h2>5-4-3-2-1 Grounding</h2>
+    <ol id="game-steps">
+      <li>5 things you can see <input type="text" placeholder="Type here..."></li>
+      <li>4 things you can feel <input type="text" placeholder="Type here..."></li>
+      <li>3 things you can hear <input type="text" placeholder="Type here..."></li>
+      <li>2 things you can smell <input type="text" placeholder="Type here..."></li>
+      <li>1 thing you can taste <input type="text" placeholder="Type here..."></li>
+    </ol>
+  </div>
+
+  <div id="item-area"></div>
+
+  <script src="anxiety.js"></script>
+</main>
+</body>
+</html>

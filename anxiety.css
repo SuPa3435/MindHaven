@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('jungle.jpg') no-repeat center center fixed;
+  background-color: #fcf8ee;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+
+.card {
+  background: white;
+  border: 2px solid #f9ca90;
+  border-radius: 12px;
+  padding: 20px;
+  width: 350px;
+  min-height: 200px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  position: fixed;
+  z-index: 10;
+}
+
+#sensory-card {
+  top: 80px;
+  left: 20px;
+}
+
+#game-card {
+  bottom: 20px;
+  left: 20px;
+}
+
+button {
+  background-color: #f5a742;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #e19839;
+}
+
+button.completed {
+  background-color: #66bb6a;
+}
+
+
+#item-area img {
+  position: absolute;
+  width: 80px; 
+  height: 80px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 20;
+}
+#item-area img.found {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+* { box-sizing: border-box; }
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block; 
+  min-height: 100vh;
+  background-color: #fcf8ee;
+}
+
+
+.navbar {
+  width: 100%;
+  background-color: #fff0d9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.navbar-inner {
+  max-width: 1200px;      
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;    
+  gap: 12px;
+}
+
+.logo {
+  color: #a1680d;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #a1680d;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  background: rgba(13,71,161,0.06);
+}
+
+.nav-link.active {
+  background: rgba(13,71,161,0.12);
+  font-weight: 600;
+}
+
+.site-content {
+  max-width: 1200px;
+  margin: 16px auto; 
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 760px) {
+  .navbar-inner { padding: 10px; }
+  .nav-links { gap: 10px; }
+  .site-content { margin: 8px; padding: 8px; }
+}
+
+
+#soundboard-card {
+  max-width: 350px;
+  top: 200px;
+  left: 1000px;
+}
+
+.sound-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sound-buttons button {
+  flex: 1;
+  padding: 8px;
+  font-size: 1rem;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anger Management</title>
+  <link rel="stylesheet" href="anger.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="logo"><a href="homepage.html" class="nav-link">MindHaven</a></div>
+      <nav class="nav-links">
+        <a href="burnout.html" class="nav-link">Burnout</a>
+        <a href="comfort.html" class="nav-link">Need Comfort</a>
+        <a href="anxiety.html" class="nav-link">Feeling Anxious</a>
+        <a href="anger.html" class="nav-link">Anger Management</a>
+      </nav>
+    </div>
+  </header>
+   
+
+
+  <main class="site-content">
+    <div class="page-content">
+      
+     
+      <div class="card" id="scream-card">
+        <h2>Scream Into the Void</h2>
+        <button id="record-btn">🎤 Start Scream</button>
+        <p id="status-text">Press the mic and scream for 3 seconds!</p>
+      </div>
+
+     
+      <div class="card" id="whack-card">
+        <h2>Whack-a-Stress</h2>
+        <p>Score: <span id="whack-score">0</span></p>
+        <div id="whack-game"></div>
+        <div class="controls">
+          <button id="start-whack">Start</button>
+          <button id="pause-whack">Pause</button>
+        </div>
+      </div>
+
+
+      <div class="card" id="journal-card">
+        <h2>Anger Journal</h2>
+        <textarea id="anger-input" placeholder="Type out your feelings here..."></textarea>
+        <button id="shred-btn">Shred</button>
+        <div id="shred-animation" class="hidden">
+          <img src="shred.gif" alt="Shredding animation" />
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="anger.js"></script>
+</body>
+
+
+</html>

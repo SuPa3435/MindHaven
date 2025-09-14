@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Burnout page</title>
+  <link rel="stylesheet" href="burnout.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="logo"><a href="homepage.html" class="nav-link">MindHaven</a></div>
+      <nav class="nav-links">
+        <a href="burnout.html" class="nav-link active">Burnout</a>
+        <a href="comfort.html" class="nav-link">Need Comfort</a>
+        <a href="anxiety.html" class="nav-link">Feeling Anxious</a>
+        <a href="anger.html" class="nav-link">Anger Management</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-layout">
+    <div class="sidebar">
+      <div class="timer-block" id="study-timer">
+        <h2>Study</h2>
+        <div class="time" id="study-time">25:00</div>
+        <div class="controls">
+          <button onclick="startTimer('study')">▶️</button>
+          <button onclick="pauseTimer('study')">⏸️</button>
+          <button onclick="resetTimer('study')">🔄</button>
+        </div>
+      </div>
+
+      <div class="timer-block" id="break-timer">
+        <h2>Break</h2>
+        <div class="time" id="break-time">05:00</div>
+        <div class="controls">
+          <button onclick="startTimer('break')">▶️</button>
+          <button onclick="pauseTimer('break')">⏸️</button>
+          <button onclick="resetTimer('break')">🔄</button>
+        </div>
+      </div>
+
+      <div class="timer-block" id="music-player">
+        <h2>Calming Music</h2>
+        <audio id="calm-audio" src="INSERTMUSIC.mp3"></audio>
+        <div class="controls">
+          <button onclick="playMusic()">▶️</button>
+          <button onclick="pauseMusic()">⏸️</button>
+          <button onclick="restartMusic()">🔄</button>
+        </div>
+      </div>
+    </div>
+
+    <main class="main-content">
+      <div class="card-container">
+        <div class="card">
+          <h2>Bubble Wrap</h2>
+          <button id="reset-bubbles">Reset</button>
+          <div class="bubble-wrap-container" id="bubble-wrap"></div>
+        </div>
+
+        <div class="card" id="memory-card">
+          <h2>Memory Boost</h2>
+          <div id="memory-game" class="memory-grid"></div>
+          <button id="reset-memory" class="reset-memory">Reset Game</button>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="burnout.js"></script>
+</body>
+</html>
