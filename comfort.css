@@ -2,7 +2,7 @@
 body {
     margin: 0;
     height: 100vh;
-    background: url('campfire.jpg') no-repeat center center fixed;
+    background: url('campfire.webp') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -63,7 +63,7 @@ html, body {
 body {
   display: block; 
   min-height: 100vh;
-  background: url('campfire.jpg') no-repeat center center fixed;
+  background: url('campfire.webp') no-repeat center center fixed;
   background-size: cover;
 }
 
