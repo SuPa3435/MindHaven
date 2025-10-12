@@ -18,26 +18,24 @@ function generateTasks() {
   list.innerHTML = "";
   itemArea.innerHTML = "";
 
-  // Pick 3 random tasks
+
   const shuffled = tasks.sort(() => 0.5 - Math.random());
   const selected = shuffled.slice(0, 3);
 
   selected.forEach(task => {
-    // Add to list
     const li = document.createElement("li");
     li.textContent = task.text;
     li.dataset.type = task.type;
     list.appendChild(li);
 
-    // Add corresponding image somewhere random
+
     const img = document.createElement("img");
     img.src = task.img;
     img.dataset.type = task.type;
 
-    // random position inside viewport (with padding so it doesn’t overlap cards)
-    // Keep images away from the left-side cards
-    const paddingLeft = 380; // width of cards + a little gap
-    const paddingTop = 80;   // keep below navbar
+
+    const paddingLeft = 380; 
+    const paddingTop = 80;   
 
     const maxX = window.innerWidth - 120;
     const maxY = window.innerHeight - 120;

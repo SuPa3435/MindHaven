@@ -1,10 +1,4 @@
 
-body {
-    margin: 0;
-    height: 100vh;
-    background: url('campfire.webp') no-repeat center center fixed;
-    background-size: cover;
-}
 
 .card {
     background: #ffffff;
